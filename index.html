@@ -3,46 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Vicente's Website</title>
-
-    <style>
-        body {
-            max-width: 800px;
-            margin: 60px auto;
-            padding: 0 20px;
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-        }
-
-        h1 {
-            font-size: 42px;
-        }
-
-        a {
-            color: #0969da;
-        }
-    </style>
+    <title>Vicente Morillo Morales - Mechanical Engineering & Commerce Student</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <script src="projects-data.js"></script>
+    <script src="render-projects.js"></script>
+    <!-- <script data-goatcounter="https://rachitt.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script> -->
 </head>
+<body class="home">
 
-<body>
-    <h1>Hello, I'm Vicente</h1>
+    <button class="nav-mobile-toggle" type="button" aria-expanded="false" aria-label="Open navigation">
+        <span class="hamburger"></span>
+    </button>
+    <div class="page-shell">
+        <div data-nav-root></div>
 
-    <p>
-        Welcome to my website hosted using GitHub Pages.
-    </p>
+        <div class="page-content">
+            <main>
+                <!-- Full-Bleed Hero with responsive background image -->
+                <section class="hero-fullbleed">
+                    <div class="hero-overlay"></div>
+                    <!-- Responsive hero image (loads eagerly) -->
+                    <picture aria-hidden="true" class="hero-picture">
+                        <img class="hero-bg" src="images/mk2_hotfire-w800.png" srcset="images/mk2_hotfire-w1600.png 1600w, images/mk2_hotfire-w1024.png 1024w, images/mk2_hotfire-w800.png 800w" sizes="100vw" alt="Solaris Mk II test fire" loading="eager" onerror="this.style.display='none'">
+                    </picture>
+                    <div class="hero-content-center">
+                        <h1>Rachit Tamrakar</h1>
+                        <p class="hero-tagline">Mechatronics &amp; Robotics Student<br>Computer Vision Systems<br>Aerospace Avionics/Test Engineering</p>
+                        <div class="hero-ctas">
+                            <a href="projects.html" class="btn-primary">View Projects</a>
+                            <a href="about.html" class="btn-secondary">About</a>
+                            <a href="resume.html" class="btn-secondary">Resume</a>
+                        </div>
+                    </div>
+                </section>
 
-    <h2>About me</h2>
+                <!-- Featured Projects -->
+                <div id="featured-projects-container">
+                    <!-- Projects rendered by render-projects.js -->
+                </div>
 
-    <p>
-        I am an engineering student interested in rocketry,
-        manufacturing and propulsion systems.
-    </p>
+            </main>
 
-    <p>
-        <a href="https://github.com/Vicente-MM">
-            View my GitHub profile
-        </a>
-    </p>
+            
+        </div>
+    </div>
+
+    <script src="site.js"></script>
 </body>
 </html>
