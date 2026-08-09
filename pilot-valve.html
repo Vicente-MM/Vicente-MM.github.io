@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solaris Mk II Fluids System - Vicente Morillo Morales</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="project-data.js"></script>
+    <script src="render-projects.js"></script>
+    <!-- <script data-goatcounter="https://rachitt.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script> -->
+</head>
+<body class="case-study">
+
+    <button class="nav-mobile-toggle" type="button" aria-expanded="false" aria-label="Open navigation">
+        <span class="hamburger"></span>
+    </button>
+    <div class="page-shell">
+        <div data-nav-root></div>
+
+        <div class="page-content">
+
+    <main class="case-study">
+        <header class="case-study-header">
+            <div class="case-study-header-content">
+                <a href="projects.html" class="back-link">Back to Projects</a>
+                <h1>Solaris Mk II Fluids System</h1>
+            </div>
+        </header>
+
+        <div class="case-study-content">
+            <section class="case-study-section">
+                <h2>Overview</h2>
+                <ul>
+                    <li>High pressure, 3-way pneumatic pilot valve used to actuate main oxidizer valve onboard Solaris Mk II</li>
+                    <li>Operates under 70 Bar of pressure in temperatures ranging from -20°C to 50°C</li>
+                    <li>Extremely constrained physical space required small form factor design</li>
+                    <li>10 second actuation time with live positional feedback</li>
+                    <li>Reliable actuation is required to ensure successful engine ignition</li>
+                </ul>
+            </section>
+
+            <div class="media-row media-3up" style="margin-top: var(--spacing-md); margin-bottom: var(--spacing-xl); gap: var(--spacing-md); max-width: 100%; margin-left: auto; margin-right: auto;">
+                <figure class="media-card">
+                    <img src="images/PV Drawing.png" srcset="images/PV Drawing.png" sizes="(max-width:900px) 100vw, 28vw" alt="Solaris Mk II oxidizer fluid system assembly drawing" loading="lazy" onerror="this.style.display='none'">
+                    <figcaption class="image-caption" style="text-align: center;">Solaris Mk II oxidizer fluid system assembly drawing</figcaption>
+                </figure>
+                <figure class="media-card">
+                    <img src="images/PV CAM.png" srcset="images/PV CAM.png" sizes="(max-width:900px) 100vw, 28vw" alt="CAM setup of valve body" loading="lazy" onerror="this.style.display='none'">
+                    <figcaption class="image-caption" style="text-align: center;">CAM setup of valve body</figcaption>
+                </figure>
+                <figure class="media-card">
+                    <img src="images/Leadwell.jpg" srcset="images/Leadwell.jpg" sizes="(max-width:900px) 100vw, 28vw" alt="CNC machining of valve component" loading="lazy" onerror="this.style.display='none'">
+                    <figcaption class="image-caption" style="text-align: center;">CNC machining of valve component</figcaption>
+                </figure>
+                <figure class="media-card">
+                    <img src="images/PV in Hand.jpg" srcset="images/PV in Hand.jpg" sizes="(max-width:900px) 100vw, 28vw" alt="Machined pilot valve body" loading="lazy" onerror="this.style.display='none'">
+                    <figcaption class="image-caption" style="text-align: center;">Machined pilot valve body</figcaption>
+                </figure>
+                <figure class="media-card">
+                    <img src="images/PCB Designer.png" srcset="images/PCB Designer.png" sizes="(max-width:900px) 100vw, 28vw" alt="PCB Designer layout" loading="lazy" onerror="this.style.display='none'">
+                    <figcaption class="image-caption" style="text-align: center;">PCB Designer layout</figcaption>
+                </figure>
+                <figure class="media-card">
+                    <img src="images/Pv with PCB.jpg" srcset="images/Pv with PCB.jpg" sizes="(max-width:900px) 100vw, 28vw" alt="Pilot valve with integrated PCB" loading="lazy" onerror="this.style.display='none'">
+                    <figcaption class="image-caption" style="text-align: center;">Pilot valve with integrated PCB</figcaption>
+                </figure>
+            </div>
+
+            <section class="case-study-section alt-bg">
+                <h2>My Role</h2>
+                <ul>
+                    <li>Designed prototype of the valve assembly using Creo Parametric CAD software</li>
+                    <li>Utilised Creo Windchill for product data management</li>
+                    <li>Conducted FEA using ANSYS to ensure design can withstand pressure</li>
+                    <li>Created CAM programs for manufacturing using Autodesk Fusion package</li>
+                    <li>CNC machined valve components using a 3-axis mill</li>
+                    <li>Assembled and tested the valve assembly under pressure</li>
+                    <li>Designed position feedback PCB using KiCad and Altium Designer</li>
+                    <li>Iterated on the design to enhance  reliability and minimise actuator wear</li>
+                </ul>
+            </section>
+
+            <section class="case-study-section">
+                <h2>Results &amp; Impact</h2>
+                <ul>
+                    <li>Has now been integrated into 2 team competition rockets</li>
+                    <li>Performed nominally across 5 launches</li>
+                    <li>Contributed to HPR winning the Technical Excellence Award at the 2025 International Rocketry Engineering Competition</li>
+                </ul>
+            </section>
+
+            <div class="video-embed-row" style="display:flex; flex-direction:column; gap:var(--spacing-md);">
+                <div class="video-embed-container embed-16x9" style="overflow: hidden;">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/gksVLuYr6OE?si=Jk7580rF9cJontod" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p class="video-caption">Drone footage of Project Zenith test launch. Filmed on my DJI Mavic Mini.</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    </div>
+
+    <script src="site.js"></script>
+    <script>
+        // Smart back navigation based on referrer
+        const backLink = document.querySelector('.back-link');
+        const referrer = document.referrer;
+        if (backLink && (referrer.includes('index.html') || referrer.endsWith('/'))) {
+            backLink.href = 'index.html';
+            backLink.textContent = 'Back to Home';
+        }
+    </script>
+</body>
+</html>

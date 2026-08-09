@@ -97,7 +97,7 @@ body:hover::-webkit-scrollbar-thumb {
     font-size: 1rem;
     font-weight: 600;
     text-decoration: none;
-    border-radius: 8px;
+    border-radius: 0;
     transition: all 0.3s ease;
     display: inline-block;
 }
@@ -185,6 +185,8 @@ body:hover::-webkit-scrollbar-thumb {
 .side-nav-brand .logo {
     display: block;
     margin-bottom: var(--spacing-xs);
+    font-size: 0.98rem; /* smaller */
+    line-height: 1.2;
 }
 
 .side-nav-links {
@@ -204,7 +206,7 @@ body:hover::-webkit-scrollbar-thumb {
     text-decoration: none;
     color: var(--text-primary);
     padding: 0.35rem 0.75rem;
-    border-radius: 12px;
+    border-radius: 0;
     transition: background-color 0.2s ease, color 0.2s ease;
     font-weight: 500;
 }
@@ -222,7 +224,7 @@ body:hover::-webkit-scrollbar-thumb {
 .nav-group-toggle {
     border: none;
     background: transparent;
-    border-radius: 6px;
+    border-radius: 0;
     padding: 0.35rem 0.4rem;
     display: grid;
     place-items: center;
@@ -245,7 +247,7 @@ body:hover::-webkit-scrollbar-thumb {
     text-decoration: none;
     color: var(--text-primary);
     padding: 0.35rem 0.75rem;
-    border-radius: 12px;
+    border-radius: 0;
     transition: background-color 0.2s ease, color 0.2s ease;
     border: none;
     background: transparent;
@@ -635,7 +637,7 @@ footer p a {
     margin: 0 auto var(--spacing-xl) auto;
     padding: var(--spacing-lg) var(--spacing-lg);
     background-color: var(--bg-primary);
-    border-radius: 16px;
+    border-radius: 0;
     box-shadow: var(--card-shadow);
 }
 
@@ -662,14 +664,13 @@ footer p a {
     max-width: var(--width-wide);
     margin: 0 auto var(--spacing-base) auto;
     background-color: var(--bg-primary);
-    border-radius: 0 0 16px 16px;
+    border-radius: 0;
     box-shadow: var(--card-shadow);
 }
 
-/* Make the top section on any page have square top corners like Projects.
-   Exclude the homepage hero which has its own full-bleed styling. */
+/* Make the top section on any page have square corners. */
 main > section:first-child:not(.hero-fullbleed) {
-    border-radius: 0 0 16px 16px;
+    border-radius: 0;
 }
 .page-subtitle-clean {
     font-size: 1.125rem;
@@ -683,7 +684,7 @@ main > section:first-child:not(.hero-fullbleed) {
     margin: 0 auto var(--spacing-base) auto;
     padding: var(--spacing-lg);
     background-color: var(--bg-primary);
-    border-radius: 16px;
+    border-radius: 0;
     box-shadow: var(--card-shadow);
     /* allow child visuals (shadows/animations) to extend outside the section */
     overflow: visible;
@@ -924,7 +925,7 @@ main > section:first-child:not(.hero-fullbleed) {
 /* Compact project cards */
 .project-card-compact {
     background-color: var(--bg-primary);
-    border-radius: 12px;
+    border-radius: 0;
     overflow: hidden;
     box-shadow: var(--card-shadow);
     transition: all 0.3s ease;
@@ -1002,7 +1003,7 @@ main > section:first-child:not(.hero-fullbleed) {
     background-color: #eff6ff;
     color: var(--primary-color);
     padding: var(--spacing-xs) var(--spacing-sm);
-    border-radius: 6px;
+    border-radius: 0;
     font-size: 0.8rem;
     font-weight: 500;
 }
@@ -1132,7 +1133,7 @@ main > section:first-child:not(.hero-fullbleed) {
 
     .case-study-header {
         padding: var(--spacing-xl) var(--spacing-base);
-        border-radius: 0 0 14px 14px;
+        border-radius: 0;
     }
 
     .case-study-header h1 {
@@ -1181,7 +1182,7 @@ main.case-study {
     background: var(--bg-primary);
     padding: var(--spacing-base) var(--spacing-lg);
     margin: 0 auto var(--spacing-base);
-    border-radius: 0 0 16px 16px;
+    border-radius: 0;
     box-shadow: var(--card-shadow);
     max-width: var(--width-wide);
 }
@@ -1254,7 +1255,7 @@ main.case-study {
     background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
     color: #92400e;
     padding: var(--spacing-base) var(--spacing-lg);
-    border-radius: var(--spacing-md);
+    border-radius: 0;
     display: inline-flex;
     align-items: center;
     margin-bottom: 1.5rem;
@@ -1277,7 +1278,7 @@ main.case-study {
     background: #eff6ff;
     color: var(--primary-color);
     padding: var(--spacing-sm) var(--spacing-base);
-    border-radius: 6px;
+    border-radius: 0;
     font-size: 0.9rem;
     font-weight: 600;
     border: 1.5px solid #dbeafe;
@@ -1295,7 +1296,7 @@ main.case-study {
     width: 100%;
     background-color: var(--bg-primary);
     padding: var(--spacing-lg);
-    border-radius: 16px;
+    border-radius: 0;
     box-shadow: var(--card-shadow);
     margin: 0 auto;
     max-width: var(--width-wide);
@@ -1452,7 +1453,7 @@ main.case-study {
 .split-row .split-media .video-embed-container {
     height: 100%;
     padding-bottom: 0;
-    border-radius: 16px;
+    border-radius: 0;
     overflow: hidden;
 }
 
@@ -1784,7 +1785,7 @@ main.case-study {
     padding-bottom: 56.25%;
     height: 0;
     overflow: hidden;
-    border-radius: 16px;
+    border-radius: 0;
     box-shadow: var(--card-shadow-hover);
 }
 
@@ -1930,10 +1931,14 @@ body.solaris-mk-ii .proj-section__body {
 
 .media-3up .media-card {
     aspect-ratio: 4 / 3;
+    min-height: 0;
 }
 
 .media-3up .media-card img {
     max-height: none;
+    height: 100%;
+    object-fit: cover;
+    flex: 1 1 auto;
 }
 
 .media-3up-captions {
@@ -1942,21 +1947,52 @@ body.solaris-mk-ii .proj-section__body {
     gap: var(--spacing-lg);
 }
 
+
 .media-card {
     margin: 0;
-    border-radius: 0.75rem;
+    border-radius: 0;
     border: 1px solid var(--border-color);
     box-shadow: var(--card-shadow);
     overflow: hidden;
     background: var(--bg-primary);
+    /* Use grid so the image occupies the content area and caption sits below */
+    display: grid;
+    grid-template-rows: 1fr auto;
+    align-items: stretch;
 }
 
+/* Make images fill the media-card content area without pushing the caption out */
 .media-card img {
     width: 100%;
     height: 100%;
-    max-height: 60vh;
     object-fit: cover;
     display: block;
+    background: var(--bg-secondary);
+}
+
+/* Ensure the image and caption occupy distinct grid rows so captions are never clipped */
+.media-card > img {
+    grid-row: 1 / 2;
+    align-self: start;
+    min-height: 0;
+}
+
+.media-card .image-caption {
+    grid-row: 2 / 3;
+}
+
+/* Allow the card to properly shrink/grow inside grid containers */
+.media-card {
+    min-height: 0;
+}
+
+.media-card .image-caption {
+    padding: var(--spacing-sm) var(--spacing-base) var(--spacing-base);
+    text-align: center;
+    color: var(--text-secondary);
+    display: block;
+    background: var(--bg-primary);
+    border-top: 1px solid var(--border-color);
 }
 
 body.solaris-mk-ii #overview .media-card {

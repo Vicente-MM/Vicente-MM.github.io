@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Scanning and Reverse Engineering - Vicente Morillo Morales</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="project-data.js"></script>
+    <script src="render-projects.js"></script>
+    <!-- <script data-goatcounter="https://rachitt.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script> -->
+</head>
+<body class="case-study">
+
+    <button class="nav-mobile-toggle" type="button" aria-expanded="false" aria-label="Open navigation">
+        <span class="hamburger"></span>
+    </button>
+    <div class="page-shell">
+        <div data-nav-root></div>
+
+        <div class="page-content">
+
+    <main class="case-study">
+        <header class="case-study-header">
+            <div class="case-study-header-content">
+                <a href="projects.html" class="back-link">Back to Projects</a>
+                <h1>3D Scanning and Reverse Engineering</h1>
+            </div>
+        </header>
+
+        <div class="case-study-content">
+
+            <div class="confidentiality-notice">
+                <strong>Confidentiality Notice:</strong> Due to confidentiality, photos and videos cannot be shared. Any photos shown are of similar systems.
+            </div>
+
+            <section class="case-study-section">
+                <h2>Overview</h2>
+                <ul>
+                    <li>Led project to develop 3D scanning and reverse engineering capabilities for various components</li>
+                    <li>Researched in-house and externally sourced 3D scanning options including photogrammetry, laser and structured light scanners</li>
+                    <li>Reconstructed technical drawings and Siemens NX CAD models from scanned data</li>
+                </ul>
+            </section>
+
+            <section class="case-study-section alt-bg">
+                <h2>My Role</h2>
+                <ul>
+                    <li>Liaised with Mercedes-Benz Australia engineering team to understand requirements and project scope</li>
+                    <li>Communicated with suppliers to evaluate and select appropriate 3D scanning equipment</li>
+                    <li>Took initiative to be trained in operating 3D scanners in order to better select the correct equipment</li>
+                    <li>Organised logistics of onboarding supplier and arranging for the 3D scanning of initial trial parts. Wrote work instruction to document this process</li>
+                    <li>Managed the entire 3D scanning and reverse engineering process from initial research to final implementation</li>
+                </ul>
+            </section>
+
+            <section class="case-study-section">
+                <h2>Results &amp; Impact</h2>
+                <ul>
+                    <li>Established 3D scanning workflow for rapid transfer of scan data to CAD</li>
+                    <li>Decreased measurement time compared to traditional methods by 5x</li>
+                    <li>Enabled the reverse-engineering and continued manufacture of discontinued spare parts for key customers</li>
+                    <li>Gained first-hand experience using 3D scanners and scan-to-CAD software</li>
+                </ul>
+            </section>
+
+        </div>
+    </main>
+    </div>
+
+    <script src="site.js"></script>
+    <script>
+        // Smart back navigation based on referrer
+        const backLink = document.querySelector('.back-link');
+        const referrer = document.referrer;
+        if (backLink && (referrer.includes('index.html') || referrer.endsWith('/'))) {
+            backLink.href = 'index.html';
+            backLink.textContent = 'Back to Home';
+        }
+    </script>
+</body>
+</html>

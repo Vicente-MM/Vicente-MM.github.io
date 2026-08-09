@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultrasonic Inspection of Composites - Vicente Morillo Morales</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="project-data.js"></script>
+    <script src="render-projects.js"></script>
+    <!-- <script data-goatcounter="https://rachitt.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script> -->
+</head>
+<body class="case-study">
+
+    <button class="nav-mobile-toggle" type="button" aria-expanded="false" aria-label="Open navigation">
+        <span class="hamburger"></span>
+    </button>
+    <div class="page-shell">
+        <div data-nav-root></div>
+
+        <div class="page-content">
+
+    <main class="case-study">
+        <header class="case-study-header">
+            <div class="case-study-header-content">
+                <a href="projects.html" class="back-link">Back to Projects</a>
+                <h1>Ultrasonic Inspection of Composites</h1>
+            </div>
+        </header>
+
+        <div class="case-study-content">
+            <section class="case-study-section">
+                <h2>Overview</h2>
+                <ul>
+                    <li>Collaborated with Boeing Aerostructures Australia to conduct full-immersion ultrasonic NDT of composite panels</li>
+                    <li>Used type A and C ultrasonic techniques capable of detecting delaminations and porosity</li>
+                    <li>Identified several manufacturing methods to be validated, and used test results to identify areas for improvement</li>
+                </ul>
+            </section>
+
+            <div class="media-row media-3up" style="margin-top: var(--spacing-md); margin-bottom: var(--spacing-xl); gap: var(--spacing-md); max-width: 100%; margin-left: auto; margin-right: auto;">
+                <figure class="media-card">
+                    <img src="images/Layup Vac.jpg" srcset="images/Layup Vac.jpg" sizes="(max-width:900px) 100vw, 28vw" alt="Composite plate sample under vacuum during cure" loading="lazy" onerror="this.style.display='none'">
+                    <figcaption class="image-caption" style="text-align: center;">Composite plate sample under vacuum during cure</figcaption>
+                </figure>
+                <figure class="media-card">
+                    <img src="images/Immersion NDT.jpg" srcset="images/Immersion NDT.jpg" sizes="(max-width:900px) 100vw, 28vw" alt="Full immersion ultrasonic NDT machine" loading="lazy" onerror="this.style.display='none'">
+                    <figcaption class="image-caption" style="text-align: center;">Full immersion ultrasonic NDT machine</figcaption>
+                </figure>
+                <figure class="media-card">
+                    <img src="images/NDT_Scan.png" srcset="images/NDT_Scan.png" sizes="(max-width:900px) 100vw, 28vw" alt="NDT Scan results showing porosity in sample" loading="lazy" onerror="this.style.display='none'">
+                    <figcaption class="image-caption" style="text-align: center;">NDT Scan results showing porosity in sample</figcaption>
+                </figure>
+            </div>
+
+            <section class="case-study-section alt-bg">
+                <h2>My Role</h2>
+                <ul>
+                    <li>Wrote manufacturing documentation for various composite manufacturing methods such as resin infusions and wet lay-up</li>
+                    <li>Identified key steps requiring in-process quality assurance measures, such as photo documentation</li>
+                    <li>Gained first-hand experience with various NDT techniques and their applications in composite manufacturing</li>
+                    <li>Led team to write test report and key learnings in order to improve future manufacturing processes</li>
+                </ul>
+            </section>
+
+            <section class="case-study-section">
+                <h2>Results &amp; Impact</h2>
+                <ul>
+                    <li>Validated resin infusion as a reliable manufacturing method for composite panels</li>
+                    <li>Identified challenges in achieving even compression on lay-up samples, especially on complex geometries</li>
+                    <li>Currently in discussions with university staff to further develop in-house NDT capabilities</li>
+                    <li>Wrote test report identifying key learnings and recommendations for future composite manufacturing</li>
+                </ul>
+            </section>
+
+        </div>
+    </main>
+    </div>
+
+    <script src="site.js"></script>
+    <script>
+        // Smart back navigation based on referrer
+        const backLink = document.querySelector('.back-link');
+        const referrer = document.referrer;
+        if (backLink && (referrer.includes('index.html') || referrer.endsWith('/'))) {
+            backLink.href = 'index.html';
+            backLink.textContent = 'Back to Home';
+        }
+    </script>
+</body>
+</html>
